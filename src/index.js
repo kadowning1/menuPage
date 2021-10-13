@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Section from './components/Section';
+// import Items from './components/Items';
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+//import 'bootstrap/dist/css/bootstrap.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Section />
+    {/* <Items /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
