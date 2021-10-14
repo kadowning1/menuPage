@@ -1,9 +1,3 @@
-//items
-//model
-//controller
-//view - show item name, description and image
-
-
 import React, { Component } from "react"
 import axios from "axios"
 
@@ -32,8 +26,8 @@ class Items extends Component {
         // Make a request for a user with a given ID
         const apiKey = "https://port-3000-aincbootcampapi-ianrios529550.codeanyapp.com"
         //let this_ = this;
-        axios.get(apiKey + "/api/menu/type_amount/1/9")
-            .then(response => {
+        axios.get(apiKey + "/api/menu/type_amount/8/6")
+            .then(response =>  {
                 this.setState({
                     menuData: response.data
                 })
@@ -47,11 +41,7 @@ class Items extends Component {
                 // always executed
             });
     }
-
-    inputData() {
-        // const image = 
-    }
-
+    
     //     //------------------View-----------------//
     render() {
         // console.log(props, 'props')
@@ -62,7 +52,7 @@ class Items extends Component {
             //     <div className='row bg- danger justify-content-center'>
             <div className="col-4 d-flex align-items-stretch justify-content-center">
                 <div className="card text-center p-3 mb-2 bg-success text-white">
-                    <img src={this.props.src} alt='food' />
+                    <img src={this.props.src} alt='food'/>
                     <br></br>
                     <p>  {foodName}</p>
                     {/* {this.state.menuData[0]?.name} */}
@@ -74,28 +64,5 @@ class Items extends Component {
     }
 
 }
-
-// this.props.items.map((item, i) => {
-//     return 
-//     <Items/>
-// }
-
-// const randomImg = {
-//     apple: 'menu-page/public/img/apple.png',
-//     burger: 'menu-page/public/img/burger.jpeg',
-//     carrot: 'menu-page/public/img/carrot.jpeg',
-//     donut: 'menu-page/public/img/donut.jpeg',
-//     fries: 'menu-page/public/img/fries.png',
-//     oreo: 'menu-page/public/img/oreo.jpeg',
-//     pie: 'menu-page/public/img/pie.png',
-//     queso: 'menu-page/public/img/queso.jpeg',
-//     rice: 'menu-page/public/img/rice.jpeg',
-//     salad: 'menu-page/public/img/salad.jpeg',
-//     sketti: 'menu-page/public/img/sketti.jpeg',
-//     taco: 'menu-page/public/img/taco.png',
-//     tomato: 'menu-page/public/img/tomato.jpeg',
-//     turkey: 'menu-page/public/img/turkey.gif',
-//     watermelon: 'menu-page/public/img/watermelon.jpg',
-// }
 
 export default Items;

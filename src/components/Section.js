@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Items from "./Items"
+import Drinks from "./Drinks"
 //import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -9,58 +10,53 @@ import Items from "./Items"
 
 //------------Model----------//
 class Section extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            counter: 0
-        }
+    // constructor(props) {
+    //     super(props)
 
-    }
+
+    // }
 
     //-------------Controller--------//
-    // increment = () => {
-    //     this.setState({ counter: this.state.counter + 1 });
-    // }
-    // decrement = () => {
-    //     this.setState({ counter: this.state.counter - 1 });
-    // }
     componentDidUpdate() {
-        // console.log('update component')
     }
 
     componentDidMount() {
-        // console.log('regulators mount up')
-        // this.getAPI();
     }
-
 
     //------------------View-----------------//
     render() {
         //console.log('render started')
         return (
 
-            <div className='col'>
+            <div>
 
-                <h3>Breakfast</h3>
-                <div className='row'>
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
-                    <h3>Drinks</h3>
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
-                    <Items />
+                <h4 className='border border-top p-3'>Breakfast</h4>
+                <div className='row row-cols-3'>
+                    <Items src='./img/apple.png' />
+                    <Items src='./img/burger.jpeg' />
+                    <Items src='./img/carrot.jpeg' />
+                    <Items src='./img/donut.jpeg' />
+                    <Items src='./img/fries.png' />
+                    <Items src='./img/oreo.jpeg' />
+                    <Items src='./img/pie.png' />
+                    <Items src='./img/queso.jpeg' />
+                    <Items src='./img/rice.jpeg' />
+                </div>
+                <h4 className='border border-top p-3'>Drinks</h4>
+                <div className='row row-cols-3'>
+                    {/* <div className='row row-cols-3'> */}
+
+                    <Drinks src='./img/salad.jpeg' />
+                    <Drinks src='./img/sketti.jpeg' />
+                    <Drinks src='./img/taco.png' />
+                    <Drinks src='./img/tomato.jpeg' />
+                    <Drinks src='./img/turkey.gif' />
+                    <Drinks src='./img/watermelon.jpeg' />
+                    {/* </div> */}
                 </div>
             </div>
+
+
 
 
         )
