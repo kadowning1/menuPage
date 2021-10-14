@@ -32,7 +32,7 @@ class Items extends Component {
         // Make a request for a user with a given ID
         const apiKey = "https://port-3000-aincbootcampapi-ianrios529550.codeanyapp.com"
         //let this_ = this;
-        axios.get(apiKey + "/api/menu/type_amount/1/9")
+        axios.get(apiKey + "/api/menu/type_amount/" + this.props.uri)
             .then(response => {
                 this.setState({
                     menuData: response.data
@@ -60,9 +60,9 @@ class Items extends Component {
         return (
             // <div className='container'>
             //     <div className='row bg- danger justify-content-center'>
-            <div className="col-4 d-flex align-items-stretch justify-content-center">
-                <div className="card card-body d-flex flex-column text-center p-3 mb-2 bg-success text-white">
-                    <img src={this.props.src} alt='food' />
+            <div className="col-md-4 col-sm-12 justify-content-center">
+                <div className="card card-body flex-column text-center p-3 mb-2 bg-success text-white">
+                    <img className="card-img-top" src={this.props.src} alt='food'/>
                     <br></br>
                     <p>  {foodName}</p>
                     {/* {this.state.menuData[0]?.name} */}
@@ -80,22 +80,6 @@ class Items extends Component {
 //     <Items/>
 // }
 
-// const randomImg = {
-//     apple: 'menu-page/public/img/apple.png',
-//     burger: 'menu-page/public/img/burger.jpeg',
-//     carrot: 'menu-page/public/img/carrot.jpeg',
-//     donut: 'menu-page/public/img/donut.jpeg',
-//     fries: 'menu-page/public/img/fries.png',
-//     oreo: 'menu-page/public/img/oreo.jpeg',
-//     pie: 'menu-page/public/img/pie.png',
-//     queso: 'menu-page/public/img/queso.jpeg',
-//     rice: 'menu-page/public/img/rice.jpeg',
-//     salad: 'menu-page/public/img/salad.jpeg',
-//     sketti: 'menu-page/public/img/sketti.jpeg',
-//     taco: 'menu-page/public/img/taco.png',
-//     tomato: 'menu-page/public/img/tomato.jpeg',
-//     turkey: 'menu-page/public/img/turkey.gif',
-//     watermelon: 'menu-page/public/img/watermelon.jpg',
-// }
+
 
 export default Items;
