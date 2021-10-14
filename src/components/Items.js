@@ -61,7 +61,7 @@ class Items extends Component {
             // <div className='container'>
             //     <div className='row bg- danger justify-content-center'>
             <div className="col-4 d-flex align-items-stretch justify-content-center">
-                <div className="card text-center p-3 mb-2 bg-success text-white">
+                <div className="card card-body d-flex flex-column text-center p-3 mb-2 bg-success text-white">
                     <img src={this.props.src} alt='food' />
                     <br></br>
                     <p>  {foodName}</p>

@@ -34,7 +34,7 @@ class Section extends Component {
                 <div className='row row-cols-3'>
                     <Items src='./img/apple.png' />
                     <Items src='./img/burger.jpeg' />
-                    <Items src='./img/carrot.jpeg' />
+                    <Items src='./img/oreo.jpeg' />
                     <Items src='./img/donut.jpeg' />
                     <Items src='./img/fries.png' />
                     <Items src='./img/oreo.jpeg' />

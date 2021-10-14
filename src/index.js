@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 // import Section from './components/Section';
 // import Items from './components/Items';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 
 //import 'bootstrap/dist/js/bootstrap.js';
