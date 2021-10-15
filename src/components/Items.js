@@ -1,14 +1,5 @@
-//items
-//model
-//controller
-//view - show item name, description and image
-
-
 import React, { Component } from "react"
 import axios from "axios"
-
-// const axios = require('axios');
-
 
 // //------------Model----------//
 class Items extends Component {
@@ -48,18 +39,13 @@ class Items extends Component {
             });
     }
 
-    inputData() {
-        // const image = 
-    }
-
-    //     //------------------View-----------------//
+       //------------------View-----------------//
     render() {
-        // console.log(props, 'props')
+        
         const foodName = this.state.menuData[0]?.name;
         const foodText = this.state.menuData[0]?.description;
         return (
-            // <div className='container'>
-            //     <div className='row bg- danger justify-content-center'>
+            
             <div className="col-md-4 col-sm-12 py-2 justify-content-center">
                 <div className="card card-body flex-column text-center p-3 mb-2 bg-success text-white h-100">
                     <img className="card-img-top" src={this.props.src} alt='food'/>
@@ -74,12 +60,5 @@ class Items extends Component {
     }
 
 }
-
-// this.props.items.map((item, i) => {
-//     return 
-//     <Items/>
-// }
-
-
 
 export default Items;

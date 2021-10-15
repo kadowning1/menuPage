@@ -14,8 +14,6 @@ import 'bootstrap/dist/js/bootstrap.js';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <Section /> */}
-    {/* <Items /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
