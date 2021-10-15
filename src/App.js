@@ -14,6 +14,7 @@ function App() {
                     348 E Main St, Lexington, KY
                     </a>
                 <h3>Menu</h3>
+                <h6 className='text-center text-white'>******CHRISTMAS SPECIALS******</h6>
                 <Section />
             </div>
 

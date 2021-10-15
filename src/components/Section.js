@@ -24,7 +24,7 @@ class Section extends Component {
         const randomImg = [
             './img/apple.png',
             './img/burger.jpeg',
-            './img/carrot.jpeg',
+            // './img/carrot.jpeg',
             './img/donut.jpeg',
             './img/fries.png',
             './img/oreo.jpeg',

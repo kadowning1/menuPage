@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./img/christmas.jpeg);
+  background-image: url(./img/christmas.jpeg), url(./img/christmas.jpeg);
+   background-position:left, right; 
+    /* background-size: cover;  */
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
 }
 
 code {

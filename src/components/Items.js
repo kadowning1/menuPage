@@ -60,13 +60,13 @@ class Items extends Component {
         return (
             // <div className='container'>
             //     <div className='row bg- danger justify-content-center'>
-            <div className="col-md-4 col-sm-12 justify-content-center">
-                <div className="card card-body flex-column text-center p-3 mb-2 bg-success text-white">
+            <div className="col-md-4 col-sm-12 py-2 justify-content-center">
+                <div className="card card-body flex-column text-center p-3 mb-2 bg-success text-white h-100">
                     <img className="card-img-top" src={this.props.src} alt='food'/>
                     <br></br>
-                    <p>  {foodName}</p>
+                    <p>Christmas {foodName}</p>
                     {/* {this.state.menuData[0]?.name} */}
-                    <p>${Math.ceil(Math.random() * 25.32).toFixed(2)}</p>
+                    <p>${Math.ceil(Math.random() * 25.32).toFixed(2)} Holiday Pricing</p>
                     <p>{foodText}</p>
                 </div>
             </div>
